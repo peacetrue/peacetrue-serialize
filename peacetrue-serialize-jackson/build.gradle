@@ -1,0 +1,11 @@
+description 'jackson json serialize impl'
+
+dependencies {
+    api project(':peacetrue-serialize-api')
+    implementation 'com.github.peacetrue:peacetrue-jackson:1.2.2-SNAPSHOT'
+    compileOnly 'org.springframework.boot:spring-boot-autoconfigure'
+
+    testImplementation 'org.springframework:spring-test'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testCompile project(path: ':peacetrue-serialize-api', configuration: 'testArtifacts')
+}

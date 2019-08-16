@@ -1,0 +1,4 @@
+rootProject.name = 'peacetrue-serialize'
+include 'peacetrue-serialize-api'
+include 'peacetrue-serialize-java'
+include 'peacetrue-serialize-jackson'

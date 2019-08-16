@@ -1,0 +1,8 @@
+description 'java serialize impl'
+
+dependencies {
+    api project(":peacetrue-serialize-api")
+    compileOnly 'org.springframework.boot:spring-boot-autoconfigure'
+
+    testCompile project(path: ':peacetrue-serialize-api', configuration: 'testArtifacts')
+}
