@@ -15,7 +15,7 @@ allprojects {
 
 subprojects { project ->
     group 'com.github.peacetrue.serialize'
-    version '1.0-SNAPSHOT'
+    version '2.0.0-SNAPSHOT'
     description 'serialize Object to String, byte[] or anything else, and then deserialize back'
 
     apply plugin: 'java'
