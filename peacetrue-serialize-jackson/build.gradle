@@ -2,7 +2,8 @@ description 'jackson json serialize impl'
 
 dependencies {
     api project(':peacetrue-serialize-api')
-    implementation 'com.github.peacetrue:peacetrue-jackson:1.2.2-SNAPSHOT'
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.github.peacetrue:peacetrue-jackson'
     compileOnly 'org.springframework.boot:spring-boot-autoconfigure'
 
     testImplementation 'org.springframework:spring-test'
