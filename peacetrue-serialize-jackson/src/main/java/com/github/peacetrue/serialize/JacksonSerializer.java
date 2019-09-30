@@ -11,11 +11,11 @@ import java.util.Objects;
  *
  * @author xiayx
  */
-public class JacksonSerializeService implements SerializeService<String> {
+public class JacksonSerializer implements Serializer<String> {
 
     private ObjectMapperWrapper wrapper;
 
-    public JacksonSerializeService(ObjectMapperWrapper wrapper) {
+    public JacksonSerializer(ObjectMapperWrapper wrapper) {
         this.wrapper = Objects.requireNonNull(wrapper);
     }
 

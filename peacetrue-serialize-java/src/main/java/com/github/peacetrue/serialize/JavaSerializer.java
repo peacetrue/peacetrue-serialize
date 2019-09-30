@@ -8,9 +8,9 @@ import java.io.*;
  *
  * @author xiayx
  */
-public class JavaSerializeService implements SerializeService<byte[]> {
+public class JavaSerializer implements Serializer<byte[]> {
 
-    public static final JavaSerializeService DEFAULT = new JavaSerializeService();
+    public static final JavaSerializer DEFAULT = new JavaSerializer();
 
     @Override
     public byte[] serialize(@Nullable Object object) {

@@ -11,9 +11,9 @@ import org.springframework.context.annotation.Configuration;
 public class JavaSerializeAutoConfiguration {
 
     @Bean
-    @ConditionalOnMissingBean(SerializeService.class)
-    public SerializeService serializeService() {
-        return JavaSerializeService.DEFAULT;
+    @ConditionalOnMissingBean(Serializer.class)
+    public Serializer serializeService() {
+        return JavaSerializer.DEFAULT;
     }
 
 }

@@ -30,9 +30,9 @@ public class JacksonSerializeAutoConfiguration {
     }
 
     @Bean
-    @ConditionalOnMissingBean(SerializeService.class)
-    public SerializeService serializeService(ObjectMapperWrapper objectMapperWrapper) {
-        return new JacksonSerializeService(objectMapperWrapper);
+    @ConditionalOnMissingBean(Serializer.class)
+    public Serializer serializeService(ObjectMapperWrapper objectMapperWrapper) {
+        return new JacksonSerializer(objectMapperWrapper);
     }
 
 }

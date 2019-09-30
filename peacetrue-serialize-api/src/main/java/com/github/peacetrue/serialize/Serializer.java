@@ -3,11 +3,11 @@ package com.github.peacetrue.serialize;
 import javax.annotation.Nullable;
 
 /**
- * serialize service
+ * serialize Object to String, byte[] or anything else, and then deserialize back
  *
  * @author xiayx
  */
-public interface SerializeService<T> {
+public interface Serializer<T> {
 
     /** serialize object to anything else */
     @Nullable
